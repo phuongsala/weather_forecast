@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Weather Forecast</string>
+
+    <string name="txt_input_city_name">Input city name</string>
+    <string name="txt_get_weather">Get Weather</string>
+    <string name="txt_date_label">Date:</string>
+    <string name="txt_avg_temp_label">Average temperature:</string>
+    <string name="txt_pressure_label">Pressure:</string>
+    <string name="txt_humidity_label">Humidity:</string>
+    <string name="txt_desc_label">Description:</string>
+    <string name="txt_input_at_least_three_characters">Input at least 3 characters</string>
+    <string name="txt_not_support_rooted_device">This app does not support on rooted device.\nPlease try on another device.</string>
 </resources>
