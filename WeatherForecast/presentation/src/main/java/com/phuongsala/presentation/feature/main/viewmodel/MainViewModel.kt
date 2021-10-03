@@ -5,7 +5,7 @@ import androidx.lifecycle.viewModelScope
 import com.phuongsala.domain.entity.Response
 import com.phuongsala.domain.entity.WeatherInfo
 import com.phuongsala.domain.usecase.IWeatherInfoUseCase
-import com.phuongsala.loginexample.common.SingleLiveEvent
+import com.phuongsala.presentation.common.SingleLiveEvent
 import com.phuongsala.presentation.base.BaseViewModel
 import com.phuongsala.presentation.common.SecuredSharePreference
 import com.phuongsala.presentation.common.State
@@ -31,7 +31,7 @@ class MainViewModel @Inject constructor(
     }
 
     fun getWeatherInfo(cityName: String) {
-        state.value = State.Loading(true)
+        state.value = State.Loading
         viewModelScope.launch {
             // remove local data if new date
             if (sharedPreferences.checkIfNewDate()) {
@@ -42,7 +42,6 @@ class MainViewModel @Inject constructor(
                 .flowOn(Dispatchers.IO)
                 .collect {
                     withContext(Dispatchers.Main) {
-                        state.value = State.Loading(false)
                         when (it) {
                             is Response.Success<List<WeatherInfo>> -> {
                                 state.value = State.Success(it.data)

@@ -1,4 +1,4 @@
-package com.phuongsala.loginexample.common
+package com.phuongsala.presentation.common
 
 import android.util.Log
 import androidx.annotation.MainThread

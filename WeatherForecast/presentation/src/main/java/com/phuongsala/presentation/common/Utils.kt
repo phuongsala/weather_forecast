@@ -22,7 +22,7 @@ fun Context.hideKeyboard(view: View) {
 
 fun Context.checkIfDeviceWasRooted(): Boolean {
     val isEmulator = isEmulator(this)
-    val buildTags = Build.TAGS;
+    val buildTags = Build.TAGS
     return if (!isEmulator && buildTags != null && buildTags.contains("test-keys")) {
         true
     } else {
