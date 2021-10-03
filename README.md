@@ -14,6 +14,8 @@ Clean Architecture guides us to write clean code that follows the SOLID programm
 
 ## This project contains 3 layers: Presentation, Domain, Data
 
+![Application flow](https://miro.medium.com/max/875/1*a-AUcEVdyRJhIepo9JyJBw.png)
+
 
 **Presentation layer**: Would include both domain and data layer and is android specific which executes the UI logic. The presentation layer provides the UI implementation of the application. It is the dumb layer which only performs instruction with no logic in it. This layer internally implements architecture like MVC, MVP, MVVM, MVI etc. This is the layer where everything connects.
 
@@ -91,17 +93,17 @@ Clean Architecture guides us to write clean code that follows the SOLID programm
 
 10. Accessibility for Disability Supports:
 
-    a. Talkback: Use a screen reader.
+    a. Talkback: Use a screen reader
 
     b. Scaling Text: Display size and font size: To change the size of items on your screen, adjust the display size or font size ⭐
 
-11. Entity relationship diagram for the database and solution diagrams for the components, infrastructure design if any
+11. Entity relationship diagram for the database and solution diagrams for the components, infrastructure design if any ⭐
 
 12. Readme file includes:
 
-    a. Brief explanation for the software development principles, patterns & practices being applied. ⭐
+    a. Brief explanation for the software development principles, patterns & practices being applied ⭐
 
-    b. Brief explanation for the code folder structure and the key Java/Kotlin libraries and frameworks being used. ⭐
+    b. Brief explanation for the code folder structure and the key Java/Kotlin libraries and frameworks being used ⭐
 
     c. All the required steps in order to get the application run on local computer
 
